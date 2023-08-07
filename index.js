@@ -26,28 +26,17 @@ function closework() {
     $("#work_container").css("display", "none");
   }, 800);
 }
-function showcontact() {
-  $("#contact_container").css("display", "inherit");
-  $("#contact_container").addClass("animated slideInUp");
+function showdetails(choice) {
+  $("#" + choice).css("display", "block");
+  $("#" + choice).addClass("animated slideInRight");
   setTimeout(function () {
-    $("#contact_container").removeClass("animated slideInUp");
+    $("#" + choice).removeClass("animated slideInRight");
   }, 800);
 }
-function closecontact() {
-  $("#contact_container").addClass("animated slideOutDown");
+function closedetails(choice) {
+  $("#" + choice).addClass("animated slideOutRight");
   setTimeout(function () {
-    $("#contact_container").removeClass("animated slideOutDown");
-    $("#contact_container").css("display", "none");
+    $("#" + choice).removeClass("animated slideOutRight");
+    $("#" + choice).css("display", "none");
   }, 800);
 }
-setTimeout(function () {
-  $("#loading").addClass("animated fadeOut");
-  setTimeout(function () {
-    $("#loading").removeClass("animated fadeOut");
-    $("#loading").css("display", "none");
-    $("#box").css("display", "none");
-    $("#about").removeClass("animated fadeIn");
-    $("#contact").removeClass("animated fadeIn");
-    $("#work").removeClass("animated fadeIn");
-  }, 1000);
-}, 1500);

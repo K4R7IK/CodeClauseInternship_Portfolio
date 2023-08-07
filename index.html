@@ -1,130 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>K4R7IK</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/3e8ed1ade2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div id="particles-js"></div>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:1s;">about</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:1s;">work</a>
-    <!-- <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:1s;">contact</a> -->
-    <div id="middle" class="animated slideInDown" style="animation-delay:0.3s;">
-        <h1>Kartik Kushwaha</h1>
-        <h2>Student | Developer | Gamer</h2>
-        <div id="menu">
-            <a onclick="showabout()">about</a>
-            <a onclick="showwork()">work</a>
-            <!-- <a onclick="showcontact()">contact</a> -->
-        </div>
-        <table>
-                <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.0s;"><a class="social"><i class="fa-brands fa-twitter " style="color: #ffffff;"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.1s;"><a class="social"><i class="fa-brands fa-github " style="color: #ffffff;"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fa-brands fa-linkedin " style="color: #ffffff;"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.3s;"><a class="social"><i class="fa-brands fa-discord " style="color: #ffffff;"></i></a></td>
-                </tr>
-        </table>
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>Projects</h1>
-      <div id="pixelify">
-        <section>
-          <h2><a href="">Pixelify</a></h2>
-            <p>
-              This project is a full-fledged web application developed using a powerful tech stack that comprises React, Tailwind CSS, HTML, and JavaScript. Drawing inspiration from the popular platform Pinterest, the application offers users an intuitive and visually appealing space to share and discover captivating images.</p>
+    <script
+      src="https://kit.fontawesome.com/3e8ed1ade2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
 
-<p>The front-end, skillfully crafted with React, ensures a seamless and interactive user interface, elevating the overall user experience. The use of Tailwind CSS further enhances the aesthetics and responsiveness of the application, providing a polished and professional look.</p>
-
-<p>For user authentication, the application seamlessly integrates with Google accounts, streamlining the sign-in process and bolstering security measures.</p>
-
-<p>Behind the scenes, the project leverages Sanity as the backend, which plays a vital role in managing user accounts, facilitating image uploads, and securely storing relevant data. Sanity's flexible and scalable content infrastructure empowers the application to efficiently handle user-generated content while ensuring optimal performance.</p>
-
-<p>Through this meticulous blend of front-end and backend technologies, the project delivers a captivating and user-centric image-sharing platform, embodying proficiency in modern web development practices.
-            </p>
-            <div class="image-container">
-              <img src="./assets/pixelify.png" alt="Cover Pic" />
-            </div>
-            <div id="used">
-            <img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white" alt="Nvim"/>
-            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
-            <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
-            <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/>
-            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="Javascript"/>
-            <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify"/>
-            </div>
-        </section> </div>
-      <!-- <div id="tshirt"> -->
-      <!--   <section> -->
-      <!--       <h2>T-Shirt</h2> -->
-      <!--     <p></p>  -->
-      <!--       <div id="used"> -->
-      <!---->
-      <!--       </div> -->
-      <!--   </section> -->
-      <!-- </div> -->
+  <body>
+    <video id="background-video" autoplay loop muted>
+      <source src="assets/Rainy_Coffe.mp4" type="video/mp4" />
+    </video>
+    <a
+      id="about"
+      onclick="showabout()"
+      class="animated fadeIn"
+      style="animation-delay: 1s"
+      >About</a
+    >
+    <a
+      id="work"
+      onclick="showwork()"
+      class="animated fadeIn"
+      style="animation-delay: 1s"
+      >Work</a
+    >
+    <div id="middle" class="animated slideInDown" style="animation-delay: 1s">
+      <h1 class="glasses">Kartik Kushwaha</h1>
+      <h2 class="glasses">Student | Developer | Gamer</h2>
+      <table class="glasses">
+        <tr>
+          <td class="animated zoomIn" style="animation-delay: 2s">
+            <a class="social"><i class="fa-brands fa-twitter"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.1s">
+            <a class="social"><i class="fa-brands fa-github"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.2s">
+            <a class="social"><i class="fa-brands fa-linkedin"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.3s">
+            <a class="social"><i class="fa-brands fa-discord"></i></a>
+          </td>
+        </tr>
+      </table>
     </div>
     <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>About</h1>
-            <section>
-                <h2>Myself</h2>
-                <p>
-                  I am a senior at Gautam Buddha University and am currently majoring in Computer Science. I am an Open Source enthusiast and am currently exploring Cyber-Security, Linux, Web-Developement. Furthermore, learning and helping people.
-                </p>
-            </section>
-            <section>
-                <h2>Skills</h2>
-                <p>
-                  Although I do everything ;). But below are some skillset I use on regular bases. 
-                </p>
-            <div id="skills">
-              <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white" /> 
-              <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" /> 
-              <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white" /> 
-           </div>
-          <div id="skills"
-          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" /> 
-          <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white`" /> 
-          <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" /> 
-          <img src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/> 
-          <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" /> 
-          <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /> 
-          <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" /> 
+      <div onclick="closeabout()"><i class="fa-solid fa-arrow-left"></i></div>
+      <h1>About</h1>
+      <section>
+        <h2>Myself</h2>
+        <p>
+          I am a senior at Gautam Buddha University and am currently majoring in
+          Computer Science. I am an Open Source enthusiast and am currently
+          exploring Cyber-Security, Linux, Web-Developement. Furthermore,
+          learning and helping people.
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <p>
+          Although I do everything ;). But below are some skillset I use on
+          regular bases.
+        </p>
+        <div id="skills">
+          <img
+            src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white"
+          />
+        </div>
+        <div id="skills">
+          <img
+            src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+          />
+          <img
+            src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white`"
+          />
+          <img
+            src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+          />
+          <img
+            src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
+          />
+          <img
+            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+          />
+          <img
+            src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"
+          />
+        </div>
+      </section>
+    </div>
+    <div id="work_container" class="container">
+      <div onclick="closework()"><i class="fa-solid fa-arrow-left"></i></div>
+      <h1>Projects</h1>
+      <div id="sub_container">
+        <ul>
+          <li><a onclick="showdetails('pixelify')">Pixelify</a></li>
+          <li>T-Shirt Customizer</li>
+          <li>Weather Web App</li>
+        </ul>
+        <div class="side_container" id="pixelify">
+          <div onclick="closedetails('pixelify')">
+            <i class="fas fa-angle-right"></i>
           </div>
-            </section>
+          <h2>Pixelify</h2>
+          <p>
+            This project is a full-fledged web application developed using a
+            powerful tech stack that comprises React, Tailwind CSS, HTML, and
+            JavaScript. Drawing inspiration from the popular platform Pinterest,
+            the application offers users an intuitive and visually appealing
+            space to share and discover captivating images.
+          </p>
+
+          <p>
+            The front-end, skillfully crafted with React, ensures a seamless and
+            interactive user interface, elevating the overall user experience.
+            The use of Tailwind CSS further enhances the aesthetics and
+            responsiveness of the application, providing a polished and
+            professional look.
+          </p>
+
+          <p>
+            For user authentication, the application seamlessly integrates with
+            Google accounts, streamlining the sign-in process and bolstering
+            security measures.
+          </p>
+
+          <p>
+            Behind the scenes, the project leverages Sanity as the backend,
+            which plays a vital role in managing user accounts, facilitating
+            image uploads, and securely storing relevant data. Sanity's flexible
+            and scalable content infrastructure empowers the application to
+            efficiently handle user-generated content while ensuring optimal
+            performance.
+          </p>
+
+          <p>
+            Through this meticulous blend of front-end and backend
+            technologies,the project delivers a captivating and user-centric
+            image-sharing platform, embodying proficiency in modern web
+            development practices.
+          </p>
+          <div id="used">
+            <img
+              src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white"
+              alt="Nvim"
+            />
+            <img
+              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+              alt="HTML"
+            />
+            <img
+              src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+              alt="Tailwind CSS"
+            />
+            <img
+              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+              alt="React"
+            />
+            <img
+              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              alt="Javascript"
+            />
+            <img
+              src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
+              alt="Netlify"
+            />
+          </div>
+          <button
+            class="btn_one"
+            onclick="window.open('https://www.google.com', '_blank');"
+          >
+            Visit
+          </button>
         </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>contact.</h1>
-            <section>
-                <h2>contact me</h2>
-                <p>
-                    <form>
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
-                    </form> 
-                </p>
-            </section>
-        </div>
+      </div>
+    </div>
     <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-</body>
+  </body>
 </html>
