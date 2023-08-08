@@ -45,16 +45,33 @@
       <table class="glasses">
         <tr>
           <td class="animated zoomIn" style="animation-delay: 2s">
-            <a class="social"><i class="fa-brands fa-twitter"></i></a>
+            <a
+              class="social"
+              href="https://twitter.com/K4R7IK_KU5HW4H4"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </td>
           <td class="animated zoomIn" style="animation-delay: 2.1s">
-            <a class="social"><i class="fa-brands fa-github"></i></a>
+            <a class="social" href="https://github.com/K4R7IK" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </td>
           <td class="animated zoomIn" style="animation-delay: 2.2s">
-            <a class="social"><i class="fa-brands fa-linkedin"></i></a>
+            <a
+              class="social"
+              href="https://www.linkedin.com/in/k4r7ik"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </td>
           <td class="animated zoomIn" style="animation-delay: 2.3s">
-            <a class="social"><i class="fa-brands fa-discord"></i></a>
+            <a
+              class="social"
+              href="https://discord.com/users/402373075905282069"
+              target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
           </td>
         </tr>
       </table>
@@ -126,6 +143,9 @@
             src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"
           />
         </div>
+        <button class="btn_one download">
+          <a href="assets/Resume.pdf" download="Resume.pdf">Download CV</a>
+        </button>
       </section>
     </div>
     <div id="work_container" class="container">
@@ -134,8 +154,8 @@
       <div id="sub_container">
         <ul>
           <li><a onclick="showdetails('pixelify')">Pixelify</a></li>
-          <li>T-Shirt Customizer</li>
-          <li>Weather Web App</li>
+          <li><a onclick="showdetails('shirt')">T-Shirt Customizer</a></li>
+          <!-- <li>Weather Web App</li> -->
         </ul>
         <div class="side_container" id="pixelify">
           <div onclick="closedetails('pixelify')">
@@ -207,12 +227,94 @@
           </div>
           <button
             class="btn_one"
-            onclick="window.open('https://www.google.com', '_blank');"
+            onclick="window.open('https://pixelify.netlify.app', '_blank');"
+          >
+            Visit
+          </button>
+        </div>
+        <div class="side_container" id="shirt">
+          <div onclick="closedetails('shirt')">
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <h2>T-Shirt Customizer</h2>
+          <p>
+            Welcome to our state-of-the-art T-Shirt customization platform,
+            where innovation meets personal expression. Our meticulously crafted
+            website leverages cutting-edge technologies to provide you with an
+            unparalleled customization experience. Seamlessly merging the
+            capabilities of ThreeJS, React, React Three Fiber Library, Tailwind
+            CSS, and Framer Motion, our platform empowers you to bring your
+            creative visions to life.
+          </p>
+          <p>
+            At the heart of our platform lies the power of ThreeJS, a robust and
+            dynamic JavaScript library that enables stunning 3D visualizations.
+            Paired with the efficiency of React, your interactions with the
+            platform are seamless and responsive, ensuring a smooth and
+            enjoyable customization process. The React Three Fiber Library
+            enhances this experience further, enabling us to effortlessly
+            integrate the power of ThreeJS within the React environment,
+            resulting in an intuitive and cohesive user interface.
+          </p>
+          <p>
+            The aesthetic possibilities are boundless with the integration of
+            Tailwind CSS, a utility-first CSS framework that ensures both
+            flexibility and consistency in design. This framework guarantees
+            that your customization choices, from color selection to texture
+            application, are visually cohesive and tailored to your preferences.
+          </p>
+          <p>
+            But that's not all – our commitment to innovation extends to the
+            realm of AI assistance. Through our intuitive prompt AI, you have
+            the opportunity to collaborate with cutting-edge artificial
+            intelligence for the creation of logos and textures. This
+            groundbreaking feature enables you to effortlessly generate elements
+            that resonate with your vision, expanding your creative horizons.
+          </p>
+          <p>
+            Experience a world where your ideas are effortlessly transformed
+            into reality through the synergy of technology and design. Our
+            platform stands as a testament to the possibilities of the digital
+            age, redefining the way you engage with personal expression and
+            customization. Join us on this journey of creativity, innovation,
+            and self-expression as you craft a T-Shirt that is uniquely and
+            authentically yours.
+          </p>
+          <div id="used">
+            <img
+              src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white"
+              alt="ThreeJS"
+            />
+            <img
+              src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+              alt="Tailwind CSS"
+            />
+            <img
+              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+              alt="React"
+            />
+            <img
+              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              alt="JavaScript"
+            />
+            <img
+              src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
+              alt="Netlify"
+            />
+            <img
+              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+              alt="HTML"
+            />
+          </div>
+          <button
+            class="btn_one"
+            onclick="window.open('https://3dtshirt.netlify.app/', '_blank');"
           >
             Visit
           </button>
         </div>
       </div>
+      <p class="info">I'll be adding more projects soon.</p>
     </div>
     <script src="index.js" type="text/javascript"></script>
   </body>
