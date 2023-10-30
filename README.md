@@ -6,4 +6,4 @@ My Portfolio website
 This branch contain my portfolio which is currently active on web.
 
 ### Dev
-This branch contain the changes that I'm working on currently.
+This branch contain the changes that I'm working on currently. Updated may be delayed due to slow internet connections.
